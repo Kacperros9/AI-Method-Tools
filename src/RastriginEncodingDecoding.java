@@ -25,7 +25,7 @@ public class RastriginEncodingDecoding {
         Random random = new Random();
         int[] chromosome = new int[totalBits];
         for (int i = 0; i < totalBits; i++) {
-            chromosome[i] = random.nextInt(2); // 0 lub 1
+            chromosome[i] = random.nextInt(2); // 0 or 1
         }
 
         // Printing the binary chromosome
