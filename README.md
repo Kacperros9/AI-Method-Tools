@@ -54,9 +54,9 @@ exercise 1.
 
 We are given a function of n variables called the Rastrigin function of the general form:
 
-math
+```math
 f(X) = An + \sum_{i=1}^{n} \left[x_i^2 - A \cos(2 \pi x_i) \right]
-
+```
 
 </br>
 
@@ -68,9 +68,9 @@ Assume that A = 10 and n = 2 (the number of variables) and −5.21 ≤ 𝑥𝑖 
 
 **The form of the Rastrigin function for two variables _x₁_ and _x₂_:**
 
-math
+```math
 f(X) = 10 \cdot 2 + \left[x_1^2 - A \cos(2 \pi x_1)\right] + \left[x_2^2 - A \cos(2 \pi x_2)\right], \quad \text{where } -5{,}21 \le x_1, x_2 \le 5{,}21
-
+```
 
 </br></br>
 
