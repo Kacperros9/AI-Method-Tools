@@ -85,3 +85,52 @@ c) Using a random mechanism, generate a binary string (0–1) representing a pot
 d) Decode the generated binary string to determine the values of the variables _x₁_ and _x₂_.  
 Check whether the obtained values of _x₁_ and _x₂_ are **valid**, i.e., whether they satisfy the constraint:  
 -5.21 ≤ x₁, x₂ ≤ 5.21. If not, draw another valid binary string.
+
+
+</br>
+
+## Lab3. Topic: *Genetic operators - crossover*
+### *Exercise 1.*
+### 🗎 File name: RastriginGA2Variables.java
+</br>
+
+#### Task Description
+
+For the Rastrigin function with two variables x1 and x2:
+
+```math
+
+    f(\mathbf{x}) = 10 \cdot 2 + \left[x_1^2 - 10 \cdot \cos(2\pi x_1)\right] + \left[x_2^2 - 10 \cdot \cos(2\pi x_2)\right],
+    \quad \text{where } -5.21 \le x_1, x_2 \le 5.21
+
+```
+
+</br>
+
+Randomly generate two solutions (chromosomes) in binary representation **that meet the admissibility conditions**, assuming a precision of 3 decimal places after the point for decoded values. Call them "parents". Compute the Rastrigin function value for both solutions.
+
+Next:
+
+a) Design a single-point crossover operator and perform crossover on the parent solutions. Compute the function value f for the resulting offspring. Do the offspring solutions differ significantly from the parents in terms of function value?
+
+b) Design a two-point crossover operator and perform crossover on the parent solutions. Compute the function value f for the resulting offspring. Do the offspring differ significantly from the parents in terms of function value?
+
+c) As a result of crossover, an offspring may be **invalid** (e.g., x1 or x2 falls outside the range −5.21 ≤ xi ≤ 5.21). Fix the offspring so that it meets the admissibility constraints again. Propose and implement a method to repair such invalid offspring.
+
+</br>
+
+### *Exercise 2.*
+### 🗎 File name: RastriginGA10Variables.java
+</br>
+
+#### Task Description
+
+Repeat Exercise 1 for the Rastrigin function with 10 variables:
+
+```math
+
+    f(\mathbf{x}) = An + \sum_{i=1}^{n} \left[x_i^2 - A \cdot \cos(2\pi x_i)\right], \quad \text{where } A = 10 \text{ and } -5.21 \le x_i \le 5.21,\ i = 1,\dots,n
+
+```
+
+</br>
