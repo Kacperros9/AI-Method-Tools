@@ -134,3 +134,71 @@ Repeat Exercise 1 for the Rastrigin function with 10 variables:
 ```
 
 </br>
+
+## Lab4. Topic: *Genetic Operators – PMX Crossover, Mutation, and Inversion*
+### *Exercise 1.*
+### 🗎 File name: RastriginGA2VariablesMutation.java
+</br>
+
+#### Task Description
+
+For the Rastrigin function of 2 variables x1 and x2 (Binary Representation)
+
+```math
+f(X) = 10 \cdot 2 + \left[x_1^2 - A \cdot \cos(2\pi x_1)\right] + \left[x_2^2 - A \cdot \cos(2\pi x_2)\right], \quad \text{where } -5.21 \leq x_1, x_2 \leq 5.21
+```
+
+</br>
+
+1.1 Randomly generate a solution using a **binary representation** that satisfies admissibility conditions and assumes a precision of 3 decimal places for decoded values.
+
+1.2 Calculate the function value `f` for the generated solution.
+
+1.3 Design a **mutation operator**. Let the mutation probability `(pₘ)` be a parameter of the operator. Perform a mutation on the solution using a given `pₘ`, and then:
+
+1.4 Calculate the function value `f` after mutation.
+
+Has the function value changed after applying the mutation operator?
+
+</br>
+
+### *Exercise 2.*
+### 🗎 File name: PMXCrossoverOperator.java
+</br>
+
+#### Task Description
+
+- Create two solutions (parents) using a **path representation**, containing a random permutation of numbers from the set `[1, 10]`.
+
+- Design and perform the **PMX crossover operator** for the two parent solutions.
+
+- List the original parent solutions and the resulting offspring.
+
+</br>
+
+### *Exercise 3.*
+### 🗎 File name: PathInversionOperator.java
+</br>
+
+#### Task Description
+
+- Design the **inversion operator** for path-represented solutions.
+
+- Perform inversion on the **parents from Exercise 2** and present the results.
+
+</br>
+
+### *Exercise 4.*
+### 🗎 File name: RastriginGA10VariablesBinary.java
+</br>
+
+#### Task Description
+
+The Rastrigin function for `n = 10` variables is defined as:
+
+```math
+f(x) = A \cdot n + \sum_{i=1}^{n} \left[x_i^2 - A \cdot \cos(2\pi x_i)\right], \quad \text{ where } A = 10,\ n = 10,\ x_i \in [-5.21,\ 5.21] \text{ with precision to 3 decimal places}
+```
+</br>
+
+- Complete the same steps as in **Exercise 1**, adapted for **10 variables**.
