@@ -202,3 +202,60 @@ f(x) = A \cdot n + \sum_{i=1}^{n} \left[x_i^2 - A \cdot \cos(2\pi x_i)\right], \
 </br>
 
 - Complete the same steps as in **Exercise 1**, adapted for **10 variables**.
+
+</br>
+
+## Lab5. Topic: *Generating a population of chromosomes in GA*
+### *Exercise 1.*
+### 🗎 File name: GAPopulationInitialization.java
+</br>
+
+#### Task Description
+
+The function is defined as:
+
+```math
+f(x_1, x_2) = -x_1^2 - x_2^2 + 2,\quad \text{where } -2 \leq x_1 \leq 2 \text{ and } -2 \leq x_2 \leq 2
+```
+
+</br>
+
+Assuming variables may take values with a precision of 5 decimal places, perform the following:
+
+1.1 Write a method using a random mechanism to generate a population of individuals (chromosomes), representing potential solutions. Each individual should be represented by a binary string (0-1), suitable for use in a genetic algorithm. Let each variable be encoded with 5-decimal precision. The number of individuals in the population, N, should be a parameter. Each generated individual must be checked for admissibility (within allowed domain).
+
+1.2 Write a method to calculate the fitness function value for each individual from the population generated in 1.1. Store fitness values in a 1xN array.
+
+1.3 Write 3 display methods:
+
+- Display all chromosomes from the generated population.
+
+- Display only the fitness values of the chromosomes.
+
+- Display chromosomes along with their corresponding fitness values.
+
+1.4 Write a method to calculate and display the average fitness value of the population.
+
+1.5 Write a method to count and display the number of individuals with a fitness value less than the average value.
+
+1.6 Write a method to count and display the number of individuals with a fitness value greater than or equal to the average value.
+
+</br>
+
+### *Exercise 2.*
+### 🗎 File name: GAPopulationInitialization2.java
+</br>
+
+#### Task Description
+
+The Rastrigin function is defined as:
+
+```math
+f(x) = An + \sum_{i=1}^{n} \left[x_i^2 - A \cos(2\pi x_i)\right],\quad \text{where } A = 10,\ n = 10,\ x_i \in [-5.21, 5.21]
+```
+
+Take accuracy to 3 decimal places. Perform all instructions from Exercise 1, adapted for the above function and 10 variables.
+
+</br>
+
+
